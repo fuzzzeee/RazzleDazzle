@@ -67,7 +67,9 @@ namespace RazzleDazzle
             { 48, new Square(100) },
         };
         
-        private long _points, _prizes, _cost = 1, _spent, _turns;
+        private long _points, _prizes = 1, _cost = 1, _spent, _turns;
+
+        public long Cost => _cost;
 
         public long Prizes => _prizes;
 
@@ -79,6 +81,7 @@ namespace RazzleDazzle
         {
             while (true)
             {
+                _spent += _cost;
                 var rolls = new int[8];
                 for (var roll = 0; roll < rolls.Length; roll++)
                 {
@@ -103,7 +106,6 @@ namespace RazzleDazzle
                         break;
                 }
                 _points += square.Points;
-                _spent += _cost;
                 _turns++;
                 if (_points >= 100)
                     return;
