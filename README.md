@@ -1,6 +1,8 @@
 # The Razzle Dazzle Scam
 C# implementation of scam documented by https://www.youtube.com/watch?v=527F51qTcTg
 
+Surprisingly you can actually win dozens of prizes with less than $2000 spent - but you're more likely to spend quadrillions of dollars.
+
 Sample result:
 
 Won 39 prizes after spending $71,678.00 on 267 turns
